@@ -15,6 +15,9 @@ app.set('view engine', 'pug');
 //añadir el directorio de las vistas
 app.set('views', path.join(__dirname, './views'));
 
+//habilitar bodyParser para acceder a los datos del formulario
+app.use(bodyParser.urlencoded({extended: true}));
+
 app.use('/', routes());
 
 app.listen(8080); //se configura el puerto de escucha del servidor, con el método .listen
