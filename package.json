@@ -18,7 +18,12 @@
   "homepage": "https://github.com/jesquintero/uptask#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "pug": "^2.0.4"
+    "express-validator": "^6.4.0",
+    "mysql2": "^2.1.0",
+    "pug": "^2.0.4",
+    "sequelize": "^5.21.4",
+    "shortid": "^2.2.15",
+    "slug": "^2.1.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
