@@ -16,7 +16,11 @@ const Proyectos = db.define('proyectos', { //definición del modelo
         beforeCreate(proyecto){ //antes de crear en la BD (lo que se va acrear, se pasa com oun objeto)
             const url = slug(proyecto.nombre).toLocaleLowerCase();
 
-
+            proyecto.url = `${url}-${shotrid.generate()}`; //asignamos el valor resultado del slug a la url
+        },
+        beforeUpdate(proyecto){ //antes de actualizar en la BD (lo que se va acrear, se pasa com oun objeto)
+            const url = slug(proyecto.nombre).toLocaleLowerCase();
+            
             proyecto.url = `${url}-${shotrid.generate()}`; //asignamos el valor resultado del slug a la url
         }
     }

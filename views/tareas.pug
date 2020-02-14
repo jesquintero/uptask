@@ -2,4 +2,14 @@ extends main
 
 block contenido
     .contenido-principal
-        h1 #{nombrePagina}
+        h1 #{nombrePagina} - #{proyecto.nombre}
+
+        //incluir formulario
+
+        //Listado de pendientes
+
+
+        //Acciones que se pueden aplicar sobre el proyecto
+        .contenedor-acciones
+            a(href=`/proyecto/editar/${proyecto.id}` class="boton") Editar Proyecto
+            button#eliminar-proyecto(type="button" class="boton eliminar") Eliminar Proyecto

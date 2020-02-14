@@ -4,7 +4,9 @@
   "description": "Proyecto UpTask con Node y MVC",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js"
+    "dev": "nodemon ./index.js",
+    "start": "concurrently \"npm run dev\" \"npm run watch\" ",
+    "watch": "webpack --w --mode development"
   },
   "repository": {
     "type": "git",
@@ -17,15 +19,24 @@
   },
   "homepage": "https://github.com/jesquintero/uptask#readme",
   "dependencies": {
+    "@babel/preset-env": "^7.8.4",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.1.0",
+    "currently": "0.0.8",
     "express": "^4.17.1",
     "express-validator": "^6.4.0",
     "mysql2": "^2.1.0",
     "pug": "^2.0.4",
     "sequelize": "^5.21.4",
     "shortid": "^2.2.15",
-    "slug": "^2.1.1"
+    "slug": "^2.1.1",
+    "sweetalert2": "^9.7.2",
+    "webpack": "^4.41.6"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "@babel/core": "^7.8.4",
+    "nodemon": "^2.0.2",
+    "webpack-cli": "^3.3.11"
   }
 }
