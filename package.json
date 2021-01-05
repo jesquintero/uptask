@@ -20,7 +20,7 @@
   "homepage": "https://github.com/jesquintero/uptask#readme",
   "dependencies": {
     "@babel/preset-env": "^7.8.4",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-loader": "^8.0.6",
     "concurrently": "^5.1.0",
     "currently": "0.0.8",
