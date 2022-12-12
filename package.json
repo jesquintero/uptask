@@ -24,7 +24,7 @@
     "babel-loader": "^8.0.6",
     "concurrently": "^5.1.0",
     "currently": "0.0.8",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-validator": "^6.4.0",
     "mysql2": "^2.1.0",
     "pug": "^2.0.4",
